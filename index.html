@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+<div class="l l_burger">
+    <div class="wrapper">
+        <div class="l__head head clearfix">
+            <div class="head__logo head__logo-left "><img src="images/logo-burger.png" width="119" height="122" alt=""></div>
+            <div class="head__logo head__logo-right "><img src="images/logo-kupanda.png" width="183" height="61" alt=""></div>
+        </div>
+        <div class="banner">
+            <img class="banner__img" src="images/banner-burger.png"  alt="">
+            <div class="banner__text">
+                <span class="banner__text-line1">Рядом с вами,</span>
+                <span class="banner__text-line2">в ресторане Бургер КИнг</span>
+                <span class="banner__text-line3">с 12:00 до 16:00</span>
+                <span class="banner__text-line4">всё меню со скидкой</span>
+            </div>
+        </div>
+        <div class="l__controls controls clearfix">
+            <div class="controls__qr">
+                <img src="images/qr-burger.png" alt="">
+            </div>
+            <div class="controls__forms">
+                <form action="">
+                    <div class="input-line">
+                        <input type="text" class="input-txt"  value="14284-9910-43856-42995-1665"/>
+                        <div class="btn btn_long" onclick="window.print()">Распечатать скидку</div>
+                    </div>
+                    <div class="input-line"><span class="input-line__text">или</span></div>
+                    <div class="input-line clearfix">
+                        <div class="btn btn_left modal-link" data-link="template/mail.html">Отправить скидку по смс</div>
+                        <div class="btn btn_right modal-link" data-link="template/mail.html">Отправить скидку по E-mail</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="l__map map">
+            <div class="map__adress">Москва, Сандуновский пер., 13</div>
+            <div class="map__wrapper">
+                <div id="map" class="map__inner"></div>
+            </div>
+        </div>
+        <div class="rulles">
+            <ul class="rulles__list">
+                <li>Скидка действует до 30.11.2015</li>
+                <li>Скидка можно использовать с 02.10.2015.</li>
+                <li>Вы можете предъявить скидку как в распечатанном, так и в электронном виде.</li>
+                <li>Скидка дает право скидки 50% на стейкхаус, картофель «Кинг фри» (стандарт порция) и соус на выбор (149 руб. вместо 298 руб.).</li>
+                <li>Перед заказом необходимо предъявить скидку кассиру или менеджеру ресторана</li>
+            </ul>
+        </div>
+
+</div>
+    <div class="modal ">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__body-inner"></div>
+            <svg class="modal__close">
+                <line x1="0" y1="0" x2="20" y2="20" stroke="#000000" stroke-width="2" stroke-linecap="round"></line>
+                <line x1="20" y1="0" x2="0" y2="20" stroke="#000000" stroke-width="2" stroke-linecap="round"></line>
+            </svg>
+        </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
